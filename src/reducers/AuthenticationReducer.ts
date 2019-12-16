@@ -1,5 +1,5 @@
 import { IAppAction, ActionType } from './../actions/Helpers';
-improt { User } from '../state/User';
+import { User } from '../state/User';
 
 
 export const AuthenticationReducer = (state: User = null, action: IAppAction) : User => {
