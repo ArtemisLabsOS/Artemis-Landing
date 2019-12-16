@@ -19,8 +19,8 @@ const MyApp: React.FC = () => {
       <AppBar position="sticky" color="default" elevation={0}>
         <Toolbar>
           <Grid container alignContent="center" alignItems="center" justify="space-between">
-            <Typography variant="h6">{t("Pristine")}</Typography>
-            <Typography variant="caption">typescript-react-material-ui</Typography>
+            <Typography variant="h6">{t("Project Artemis")}</Typography>
+            <Typography variant="caption">Apollo Client Dev Tool</Typography>
             <Grid item>
               <LanguageMenu />
               <Tooltip title={t("Toggle Dark Mode")}>
@@ -36,8 +36,8 @@ const MyApp: React.FC = () => {
         <CssBaseline />
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
           <img className="logo" alt="logo" src={darkMode.value
-            ? "https://github.com/etclabscore/pristine-media-assets/blob/master/pristine-logo-dark/pristine-logo-dark%20(PNG)/256x256.png?raw=true" //tslint:disable-line
-            : "https://github.com/etclabscore/pristine-media-assets/blob/master/pristine-logo/pristine-logo%20(PNG)/256x256.png?raw=true" //tslint:disable-line
+            ? "https://i.pinimg.com/564x/97/54/32/9754322dbfc78e4c7f918e6110d34c51.jpg" //tslint:disable-line
+            : "https://i.pinimg.com/564x/97/54/32/9754322dbfc78e4c7f918e6110d34c51.jpg" //tslint:disable-line
           } style={{ paddingTop: "10%" }} />
           <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
             {t("Date", { date: new Date() })}
