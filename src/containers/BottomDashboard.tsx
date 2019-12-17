@@ -11,10 +11,12 @@ const BottomDashboard: React.FC = () => {
     const { t } = useTranslation();
     const theme = darkMode.value ? darkTheme : darkTheme;
 
+//pull request!
 
     return(
         <MuiThemeProvider theme={theme}>
 
+            {/* <Link></Link> Patreon */}
         </MuiThemeProvider>
     );
 };
