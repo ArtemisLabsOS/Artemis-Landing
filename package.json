@@ -1,54 +1,48 @@
 {
-  "name": "react-mobx-mui-ts-seed",
-  "description": "Seed Project for React + MobX + Material UI + TypeScript",
-  "version": "0.1.0",
-  "main": "index.js",
-  "author": "Naresh Bhatia",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/archfirst/react-mobx-mui-ts-seed.git"
+  "name": "@etclabscore/pristine-typescript-react-material-ui",
+  "version": "0.0.0-development",
+  "homepage": "https://etclabscore.github.io/pristine-typescript-react-material-ui/",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "tslint --fix -p .",
+    "test": "npm run lint && react-scripts test --coverage --passWithNoTests"
   },
+  "author": "",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "@storybook/react": "^3.2.5",
-    "@types/storybook__react": "^3.0.5",
-    "husky": "^0.14.3",
-    "inquirer-directory": "^2.1.0",
-    "lint-staged": "^4.0.3",
-    "plop": "^1.8.0",
-    "prettier": "^1.5.3",
-    "react-scripts-ts": "^2.6.0",
-    "ts-loader": "^4.2.0"
+    "@types/jest": "^24.0.13",
+    "@types/react-dom": "^16.8.4",
+    "jest": "24.7.1",
+    "react-scripts": "^3.0.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
-    "@types/jest": "^20.0.7",
-    "@types/node": "^8.0.24",
-    "@types/react": "^15.6.1",
-    "@types/react-dom": "^15.5.3",
-    "material-ui": "^1.0.0-beta.6",
-    "material-ui-icons": "^1.0.0-beta.5",
-    "mobx": "^3.2.2",
-    "mobx-react": "^4.1.8",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
-    "lint": "tslint 'src/**/*.ts*'",
-    "gen": "plop --plopfile generators/plopfile.js",
-    "format": "prettier --print-width 80 --tab-width 4 --single-quote --parser typescript --write 'src/**/*.ts*'",
-    "precommit": "lint-staged",
-    "storybook": "start-storybook -p 6006 -c .storybook",
-    "build-storybook": "build-storybook"
-  },
-  "lint-staged": {
-    "*.ts*": [
-      "prettier --print-width 80 --tab-width 4 --single-quote --parser typescript --write",
-      "git add"
-    ]
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "i18next": "^17.3.0",
+    "i18next-browser-languagedetector": "^4.0.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-i18next": "^10.13.1",
+    "react-router-dom": "^5.1.2",
+    "use-dark-mode": "^2.3.1"
   }
 }
