@@ -3,15 +3,3 @@
     left: 50%;
     padding: 30px;
 }
-
-
-
-#particle-canvas {
-    particleColor: '#e37575',
- 
-    interactive: true,
-    speed: 'medium',
-    density: 'high'
-    width: 100%;
-    height: 100%;
-  }
