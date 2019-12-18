@@ -4,6 +4,8 @@ import useDarkMode from "use-dark-mode";
 import { lightTheme, darkTheme } from "../themes/theme";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import { Switch, withRouter } from 'react-router-dom';
+
 import SearchBar from 'material-ui-search-bar'
 
             //value={this.state.value}
@@ -36,12 +38,16 @@ const Header: React.FC = () => {
     <span id="header">
    
       <Router>
-    <Route exact path="/">
-            <Tab label="Home" />  
-    </Route>
+    <Switch>
+      <Route exact path="/">
+              <Tab label="Home" />  
+      </Route>
+    </Switch>
+    <Switch>
     <Route path="../components/projectArtemis">
             <Tab label="About Project Artemis" />  
     </Route>  
+    </Switch>
             <Tab label="Download" />
             <Tab label="Demo" />
             <Tab label="Contribute" />
