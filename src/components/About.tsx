@@ -12,6 +12,7 @@ import './about.css'
 const About: React.FC = () => {
   return (
     <div>
+      <p> Project Artemis is sitll in Beta, a subset project of OS-Labs.</p>
     <h2>Meet Our Engineering Team</h2>
     <div id='team'>
       <div className ='person'>
@@ -35,6 +36,7 @@ const About: React.FC = () => {
         <p className='single-p'><a href = 'https://github.com/angiechangpagne' target='_blank'>@angiechangpagne</a></p>
       </div>
     </div>
+    <footer> All rights Reserved Artemis Labs LLP located in Venice, CA is actively looking for contributors and engineers to join the team. Send a pull request!</footer>
   </div>
   );
 };

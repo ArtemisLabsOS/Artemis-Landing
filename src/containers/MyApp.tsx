@@ -49,7 +49,6 @@ const MyApp: React.FC = () => {
       </AppBar>
        
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
-       
     
 
     <div id='splash'>
