@@ -37,7 +37,7 @@ const Header: React.FC = () => {
         <Tab label="Download" />
         <Tab label="Demo" />
         <Tab label="Contribute" />
-        <Tab label="Media" value={'https://medium.com/artemis-labs-open-source'}/>
+        <Tab label="Media" value={<a href='https://medium.com/artemis-labs-open-source'></a>}/>
     </span>
     </MuiThemeProvider>
   );

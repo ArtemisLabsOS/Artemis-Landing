@@ -10,11 +10,11 @@ import Header from "./Header";
 import { Link } from 'react-scroll';
 
 // import NavBar from '..components/NavBar';
-import Intro from '../components/Intro';
+ import Intro from '../components/Intro';
  import Features from '../components/Features';
-import About from '../components/About';
+ import About from '../components/About';
  import Setup from '../components/Setup';
-
+ 
 import "./MyApp.css";
 
 const MyApp: React.FC = () => {
@@ -23,12 +23,11 @@ const MyApp: React.FC = () => {
   const theme = darkMode.value ? darkTheme : darkTheme;
 
   return (
-   
     <MuiThemeProvider theme={theme}>
       <div>
         <CssBaseline />
         <AppBar position="sticky" color="default" elevation={0}>
-        <Header>   </Header>
+        <Header>  </Header>
         
         <Toolbar>
        

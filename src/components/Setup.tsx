@@ -20,7 +20,7 @@ const Setup: React.FC = () => {
         <tbody>
           <tr>
             <td>2. Install <b><a href='https://chrome.google.com/webstore/detail/' target='_blank'>Artemis Dev Tool</a></b> or <b className='strong'></b>.</td>
-            <td>2. npm run build</td>
+            <td>2. npm run dev</td>
           </tr>
           <tr>
             <td>
@@ -47,6 +47,5 @@ const Setup: React.FC = () => {
     </div>
   );
 };
-
 
 export default Setup;
