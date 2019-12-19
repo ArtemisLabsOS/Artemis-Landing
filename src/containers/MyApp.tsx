@@ -10,11 +10,11 @@ import Header from "./Header";
 import { Link } from 'react-scroll';
 
 // import NavBar from '..components/NavBar';
-import Intro from '../components/Intro';
+ import Intro from '../components/Intro';
  import Features from '../components/Features';
-import About from '../components/About';
+ import About from '../components/About';
  import Setup from '../components/Setup';
-
+ 
 import "./MyApp.css";
 
 const MyApp: React.FC = () => {
@@ -23,13 +23,12 @@ const MyApp: React.FC = () => {
   const theme = darkMode.value ? darkTheme : darkTheme;
 
   return (
-   
     <MuiThemeProvider theme={theme}>
       <div>
         <CssBaseline />
         <AppBar position="sticky" color="default" elevation={0}>
-        <Header> </Header>
-
+        <Header>  </Header>
+        
         <Toolbar>
        
           <Grid container alignContent="center" alignItems="center" justify="space-between">
@@ -37,6 +36,7 @@ const MyApp: React.FC = () => {
             <Typography variant="caption">Apollo Client Dev Tool</Typography>
             <Grid item>
               <LanguageMenu />
+              
               <Tooltip title={t("Toggle Dark Mode")}>
                 <IconButton onClick={darkMode.toggle}>
                   {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
@@ -49,17 +49,14 @@ const MyApp: React.FC = () => {
       </AppBar>
        
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
-          <img className="logo"  alt="logo" src={darkMode.value
-            ? "https://i.pinimg.com/564x/88/39/ff/8839ffabb148d4f24e2f1aa6598d12b5.jpg" //tslint:disable-line
-            : "https://i.pinimg.com/564x/88/39/ff/8839ffabb148d4f24e2f1aa6598d12b5.jpg" //tslint:disable-line
-          } style={{ paddingTop: "-67%" }} />
     
 
     <div id='splash'>
-    
-
-          <h1>Artemis</h1>
-          <a href = 'https://chrome.google.com/webstore/detail/lucid/pnaoeldlekbfpnalhabggkcddleelamc'><button>Install</button></a>
+    <img className="logo"  alt="logo" src={darkMode.value
+            ? "https://i.pinimg.com/564x/5b/1b/e7/5b1be7393b28aa407ff2686e9b330cfb.jpg" //tslint:disable-line
+            : "https://i.pinimg.com/564x/5b/1b/e7/5b1be7393b28aa407ff2686e9b330cfb.jpg" //tslint:disable-line
+          } style={{ paddingTop: "-67%" }} /> 
+          <a href = 'https://chrome.google.com/webstore/detail/'><button>Install</button></a>
           <Link to='content' smooth={true} offset={30} duration={900}>
             <div id='arrow-down'>
               <i className='fas fa-angle-double-down' />

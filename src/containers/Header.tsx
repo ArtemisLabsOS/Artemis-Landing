@@ -1,11 +1,9 @@
-import React from "react";
-import { MuiThemeProvider,Tab, CssBaseline, Menu, Tabs } from "@material-ui/core";
+import React , { Fragment} from "react";
+import { MuiThemeProvider,Tab, CssBaseline, Menu, Tabs, Link } from "@material-ui/core";
 import useDarkMode from "use-dark-mode";
 import { lightTheme, darkTheme } from "../themes/theme";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, BrowserRouter } from "react-router-dom";
 import { Switch, withRouter } from 'react-router-dom';
-
 import SearchBar from 'material-ui-search-bar'
 
             //value={this.state.value}
@@ -18,7 +16,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 
-
 import "../Styles/styles.css"
 
 const Header: React.FC = () => {  
@@ -29,19 +26,21 @@ const Header: React.FC = () => {
   return (
     <MuiThemeProvider theme={theme}>
 
-<div id="searchBar">
+      <div id="searchBar">
         <SearchBar
           
         /></div>  
-    <span id="header">
-        <Tab label="Home" />  
-
-        <Tab label="Download" />
-        <Tab label="Demo" />
-        <Tab label="Contribute" />
-        <Tab label="Media" />
-    </span>
-    </MuiThemeProvider>
+        <span id="header">
+                
+                  <Tab label="Home"/>  
+                  <Tab  label="Download" />
+                  <Tab  label="Demo" />
+                  <Tab label="Contribute" />
+                  <a href="https://www.patreon.com/artemislabs"> <Tab label="Donate" /> </a>
+                  <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media"/> </a>
+                 
+       </span>
+      </MuiThemeProvider>
   );
 };
 
