@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,900');
 
 * {
-  margin: 0;
+  margin: 6px;
 }
 
 body {
@@ -18,6 +18,52 @@ body {
   cursor: pointer;
   transition: all 1s ease;
 }
+h1, h2, h3{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .3em;
+  color: rgb(243, 255, 131);
+  text-transform: uppercase;
+  padding: 20px; 
+}
+h2{
+  padding-top: 100px;
+}
+#logo{
+  width: 75%;
+}
+
+.content{
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin-top: 100px;
+}
+
+#splash{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+/* * Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #splash{
+    height: 600px;
+  }
+  h1, h2, h3{
+    letter-spacing: .3em;
+  }
+  .content{
+    padding: 0px 100px 25px; 
+  }
+}
+
+
 @keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
 #arrow-down {
   position: relative;
@@ -25,35 +71,6 @@ body {
   text-align: center;
   animation: jump 5s infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -67,7 +84,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ddd;
+  background: rgb(39, 104, 47);
   border-radius: 5px;
 }
 

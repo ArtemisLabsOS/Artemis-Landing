@@ -9,11 +9,10 @@ import './about.css'
 // import LanguageMenu from "../containers/LanguageMenu";
 
 // import "../containers/MyApp.css";
-
 const About: React.FC = () => {
   return (
     <div>
-    <h2>Meet Our Developers</h2>
+    <h2>Meet Our Engineering Team</h2>
     <div id='team'>
       <div className ='person'>
         <img className='pro-img' src="" />

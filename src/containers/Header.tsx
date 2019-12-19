@@ -18,7 +18,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 
-
 import "../Styles/styles.css"
 
 const Header: React.FC = () => {  
@@ -35,11 +34,10 @@ const Header: React.FC = () => {
         /></div>  
     <span id="header">
         <Tab label="Home" />  
-
         <Tab label="Download" />
         <Tab label="Demo" />
         <Tab label="Contribute" />
-        <Tab label="Media" />
+        <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media" /></a>
     </span>
     </MuiThemeProvider>
   );
