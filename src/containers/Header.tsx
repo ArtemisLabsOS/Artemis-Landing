@@ -1,5 +1,5 @@
 import React from "react";
-import { MuiThemeProvider,Tab, CssBaseline, Menu, Tabs } from "@material-ui/core";
+import { MuiThemeProvider,Tab, CssBaseline, Menu, Tabs, Link } from "@material-ui/core";
 import useDarkMode from "use-dark-mode";
 import { lightTheme, darkTheme } from "../themes/theme";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
         <Tab label="Download" />
         <Tab label="Demo" />
         <Tab label="Contribute" />
-        <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media" /></a>
+        <Tab label="Media" value={'https://medium.com/artemis-labs-open-source'}/>
     </span>
     </MuiThemeProvider>
   );
