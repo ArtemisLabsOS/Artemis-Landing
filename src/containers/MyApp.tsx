@@ -10,6 +10,12 @@ import Header from "./Header";
 import { Link } from 'react-scroll';
 
 
+// import NavBar from '..components/NavBar';
+import Intro from '../components/Intro';
+// import Features from './Features.jsx';
+import About from '../components/About';
+// import Setup from '../components/Setup';
+
 import "./MyApp.css";
 
 const MyApp: React.FC = () => {
@@ -20,8 +26,9 @@ const MyApp: React.FC = () => {
   return (
    
     <MuiThemeProvider theme={theme}>
-       
-      <AppBar position="sticky" color="default" elevation={0}>
+      <div>
+        <CssBaseline />
+        <AppBar position="sticky" color="default" elevation={0}>
         <Header> </Header>
 
         <Toolbar>
@@ -41,18 +48,39 @@ const MyApp: React.FC = () => {
          
         </Toolbar>
       </AppBar>
-      <div>
-        <CssBaseline />
+       
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
           <img className="logo"  alt="logo" src={darkMode.value
             ? "https://i.pinimg.com/564x/88/39/ff/8839ffabb148d4f24e2f1aa6598d12b5.jpg" //tslint:disable-line
             : "https://i.pinimg.com/564x/88/39/ff/8839ffabb148d4f24e2f1aa6598d12b5.jpg" //tslint:disable-line
           } style={{ paddingTop: "-67%" }} />
     
+
+    <div id='splash'>
+    
+
+          <h1>Artemis</h1>
+          <a href = 'https://chrome.google.com/webstore/detail/lucid/pnaoeldlekbfpnalhabggkcddleelamc'><button>Install</button></a>
+          <Link to='content' smooth={true} offset={30} duration={900}>
+            <div id='arrow-down'>
+              <i className='fas fa-angle-double-down' />
+            </div>
+          </Link>
+        </div>
+        <div className='content'>
+          <Intro />
+
+
+          <About />
+        </div>
+
           <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
             {t("Date", { date: new Date() })}
           </Typography>
         </Grid>
+
+
+
       </div>
     </MuiThemeProvider >
     

@@ -1,0 +1,16 @@
+#github-btns{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.space{
+  margin-right: 10px;
+}
+#artemis-bio{
+  width: 75%;
+  font-style: italic;
+  margin: 20px auto;
+}
+video{
+  margin-top: 50px;
+}
