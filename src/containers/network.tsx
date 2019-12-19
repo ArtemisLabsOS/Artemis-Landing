@@ -5,22 +5,25 @@ import Brightness3Icon from "@material-ui/icons/Brightness3";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import { lightTheme, darkTheme } from "../themes/theme";
 import { useTranslation } from "react-i18next";
+import LanguageMenu from "./LanguageMenu";
+import Header from "./Header";
 
-const BottomDashboard: React.FC = () => {
+import "./MyApp.css";
+
+
+const Network: React.FC = () => {
     const darkMode = useDarkMode();
     const { t } = useTranslation();
     const theme = darkMode.value ? darkTheme : darkTheme;
 
-//pull request!
 
-    return(
+    return (
         <MuiThemeProvider theme={theme}>
 
-            {/* <Link></Link> Patreon */}
         </MuiThemeProvider>
-    );
-};
+    )
+}
 
 
 
-export default BottomDashboard;
+export default Network;

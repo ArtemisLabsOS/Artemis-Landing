@@ -37,10 +37,11 @@ const MyApp: React.FC = () => {
       <div>
         <CssBaseline />
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
-          <img className="logo" alt="logo" src={darkMode.value
+          <img className="logo"  alt="logo" src={darkMode.value
             ? "https://i.pinimg.com/564x/88/39/ff/8839ffabb148d4f24e2f1aa6598d12b5.jpg" //tslint:disable-line
             : "https://i.pinimg.com/564x/88/39/ff/8839ffabb148d4f24e2f1aa6598d12b5.jpg" //tslint:disable-line
-          } style={{ paddingTop: "10%" }} />
+          } style={{ paddingTop: "-67%" }} />
+    
           <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
             {t("Date", { date: new Date() })}
           </Typography>
