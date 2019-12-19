@@ -1,0 +1,27 @@
+#table-setup{
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th{
+  padding: 5px 30px;
+  text-align: center;
+}
+
+td {
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.strong{
+  font-weight: 900;
+}
+
+/* * Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #table-setup{
+    width: 80%;
+  }
+}

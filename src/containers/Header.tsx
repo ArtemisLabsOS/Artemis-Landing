@@ -17,11 +17,9 @@ import { makeStyles } from '@material-ui/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-// import useConfig from 'hooks/useConfig';
+
 
 import "../Styles/styles.css"
-
-
 
 const Header: React.FC = () => {  
   const darkMode = useDarkMode();
@@ -36,26 +34,13 @@ const Header: React.FC = () => {
           
         /></div>  
     <span id="header">
-   
-      <Router>
-    <Switch>
-      <Route exact path="/">
-              <Tab label="Home" />  
-      </Route>
-    </Switch>
-    <Switch>
-    <Route path="../components/projectArtemis">
-            <Tab label="About Project Artemis" />  
-    </Route>  
-    </Switch>
-            <Tab label="Download" />
-            <Tab label="Demo" />
-            <Tab label="Contribute" />
-            <Tab label="Media" />
-            
-        </Router>
-       
-      </span>
+        <Tab label="Home" />  
+
+        <Tab label="Download" />
+        <Tab label="Demo" />
+        <Tab label="Contribute" />
+        <Tab label="Media" />
+    </span>
     </MuiThemeProvider>
   );
 };

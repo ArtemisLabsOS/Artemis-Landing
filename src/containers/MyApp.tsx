@@ -9,12 +9,11 @@ import LanguageMenu from "./LanguageMenu";
 import Header from "./Header";
 import { Link } from 'react-scroll';
 
-
 // import NavBar from '..components/NavBar';
 import Intro from '../components/Intro';
-// import Features from './Features.jsx';
+ import Features from '../components/Features';
 import About from '../components/About';
-// import Setup from '../components/Setup';
+ import Setup from '../components/Setup';
 
 import "./MyApp.css";
 
@@ -69,8 +68,8 @@ const MyApp: React.FC = () => {
         </div>
         <div className='content'>
           <Intro />
-
-
+          <Setup />
+          <Features />
           <About />
         </div>
 
