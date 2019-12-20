@@ -58,9 +58,9 @@ const MyApp: React.FC = () => {
           </Link>
         </div>
         <div className='content'>
-          <Intro />
           <Setup />
           <Features />
+          <Intro />
           <About />
         </div>
 
