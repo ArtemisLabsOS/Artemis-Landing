@@ -1,11 +1,13 @@
 import React from "react"
 import './intro.css'
+import { MuiThemeProvider, AppBar, Toolbar, Typography, IconButton, Tooltip, CssBaseline, Grid } from "@material-ui/core"; //tslint:disable-line
 
 const Intro: React.FC = () => {
   return (
+    <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
+
     <div>
       <div>
-      <img src="" height='100px' />
       <h1></h1>
       <p id='artemis-bio'>
       Project Artemis is an Open Sourced client developer tool for single endpoint testing of GraphQL queries with Apollo Client. 
@@ -27,9 +29,7 @@ const Intro: React.FC = () => {
        </p>
       <p>See your GraphQL schema, queries, and cache in real-time</p>
       <p> Includes query snapshot </p>
-      <video loop autoPlay controls width='100%' muted >
-        <source src='https://twitter.com/i/status/1207729912892678145' type='video/mp4' />
-      </video>
+      
       <p> To utilize, open the inspector window. If a website or hosted site you are currently testing contains Apollo Client. 
         Artemis will appear and will render once a GraphQL query is detected. </p>
       </div>
@@ -61,6 +61,7 @@ const Intro: React.FC = () => {
       </div>
 
     </div>
+    </Grid>
   );
 };
 export default Intro;

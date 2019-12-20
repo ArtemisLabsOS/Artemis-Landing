@@ -29,14 +29,12 @@ const Header: React.FC = () => {
   return (
     <MuiThemeProvider theme={theme}>
         <span id="header">
-                
-                  <Tab label="Home"/>  
-                  <Tab  label="Download" />
-                  <Tab  label="Demo" />
-                  <a href="https://github.com/ArtemisLabsLLP/Artemis-dev-tool"><Tab label="Contribute" /></a>
-                  <a href="https://www.patreon.com/artemislabs"> <Tab label="Donate" /> </a>
-                  <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media"/> </a>
-                 
+          <Tab label="Home"/>  
+          <Tab label="Download" />
+          <Tab label="Demo" />
+          <a href="https://github.com/ArtemisLabsLLP/Artemis-dev-tool"><Tab label="Contribute" /></a>
+          <a href="https://www.patreon.com/artemislabs"> <Tab label="Donate" /> </a>
+          <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media"/> </a>  
        </span>
       </MuiThemeProvider>
   );

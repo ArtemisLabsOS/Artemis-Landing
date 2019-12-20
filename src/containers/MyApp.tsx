@@ -27,12 +27,11 @@ const MyApp: React.FC = () => {
       <div>
         <CssBaseline />
         <AppBar position="sticky" color="default" elevation={0}>
-        <Header>  </Header>
-        
+        <Header> </Header>
+      
         <Toolbar>
-       
           <Grid container alignContent="center" alignItems="center" justify="space-between">
-            <Typography variant="h6">{t("Project Artemis:  Client Dev Tool")}</Typography>
+            <Typography variant="h6">{t("Project Artemis")}</Typography>
             <Typography variant="caption"></Typography>
             <Grid item>
               <LanguageMenu />
@@ -41,15 +40,10 @@ const MyApp: React.FC = () => {
          
         </Toolbar>
       </AppBar>
-       
+      
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
-    
-
+  
     <div id='splash'>
-    <img className="logo"  alt="logo" src={darkMode.value
-            ? "https://i.pinimg.com/564x/5b/1b/e7/5b1be7393b28aa407ff2686e9b330cfb.jpg" //tslint:disable-line
-            : "https://i.pinimg.com/564x/5b/1b/e7/5b1be7393b28aa407ff2686e9b330cfb.jpg" //tslint:disable-line
-          } style={{ paddingTop: "-67%" }} /> 
           <a href = 'https://chrome.google.com/webstore/detail/'><button>Install</button></a>
           <Link to='content' smooth={true} offset={30} duration={900}>
             <div id='arrow-down'>
@@ -58,9 +52,12 @@ const MyApp: React.FC = () => {
           </Link>
         </div>
         <div className='content'>
-          <Setup />
+         
           <Features />
+          <Setup />
           <Intro />
+          
+          <a href = 'https://chrome.google.com/webstore/detail/'><button>Install</button></a>
           <About />
         </div>
 
@@ -68,8 +65,6 @@ const MyApp: React.FC = () => {
             {t("Date", { date: new Date() })}
           </Typography>
         </Grid>
-
-
 
       </div>
     </MuiThemeProvider >

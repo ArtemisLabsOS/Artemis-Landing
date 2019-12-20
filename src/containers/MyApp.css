@@ -37,7 +37,7 @@ a{
 h1, h2, h3{
   font-family: 'Quicksand', sans-serif;
   letter-spacing: .3em;
-  color: rgb(243, 255, 131);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   padding: 20px; 
 }
@@ -45,7 +45,7 @@ h2{
   padding-top: 100px;
 }
 #logo{
-  width: 75%;
+  width: 10%;
 }
 
 .content{
@@ -74,7 +74,7 @@ h2{
   h1, h2, h3{
     font-family: 'Quicksand', sans-serif;
     letter-spacing: .3em;
-    color: rgb(188, 193, 109);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding: 20px; 
     
@@ -122,7 +122,7 @@ button:hover{
   width: 100%;
 }
 .Header a{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Spectral', sans-serif;
   letter-spacing: .3em;
   color: rgb(45, 103, 66);
   text-transform: uppercase;
