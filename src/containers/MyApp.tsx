@@ -32,16 +32,10 @@ const MyApp: React.FC = () => {
         <Toolbar>
        
           <Grid container alignContent="center" alignItems="center" justify="space-between">
-            <Typography variant="h6">{t("Project Artemis")}</Typography>
-            <Typography variant="caption">Apollo Client Dev Tool</Typography>
+            <Typography variant="h6">{t("Project Artemis:  Client Dev Tool")}</Typography>
+            <Typography variant="caption"></Typography>
             <Grid item>
               <LanguageMenu />
-              
-              <Tooltip title={t("Toggle Dark Mode")}>
-                <IconButton onClick={darkMode.toggle}>
-                  {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
-                </IconButton>
-              </Tooltip>
             </Grid>
           </Grid>
          
@@ -64,9 +58,9 @@ const MyApp: React.FC = () => {
           </Link>
         </div>
         <div className='content'>
-          <Intro />
           <Setup />
           <Features />
+          <Intro />
           <About />
         </div>
 
