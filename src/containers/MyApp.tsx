@@ -16,6 +16,7 @@ import { Link } from 'react-scroll';
  import Setup from '../components/Setup';
  
 import "./MyApp.css";
+import startingGif from '../../src/assets/gifs/2.gif';
 
 const MyApp: React.FC = () => {
   const darkMode = useDarkMode();
@@ -26,31 +27,17 @@ const MyApp: React.FC = () => {
     <MuiThemeProvider theme={theme}>
       <div>
         <CssBaseline />
-        <AppBar position="sticky" color="default" elevation={0}>
-        <Header>  </Header>
-        
-        <Toolbar>
-       
-          <Grid container alignContent="center" alignItems="center" justify="space-between">
-            <Typography variant="h6">{t("Project Artemis:  Client Dev Tool")}</Typography>
-            <Typography variant="caption"></Typography>
-            <Grid item>
-              <LanguageMenu />
-            </Grid>
-          </Grid>
-         
-        </Toolbar>
-      </AppBar>
+        <Header/>
        
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
     
 
-    <div id='splash'>
+    <div id='splash' >
     <img className="logo"  alt="logo" src={darkMode.value
-            ? "https://i.pinimg.com/564x/5b/1b/e7/5b1be7393b28aa407ff2686e9b330cfb.jpg" //tslint:disable-line
-            : "https://i.pinimg.com/564x/5b/1b/e7/5b1be7393b28aa407ff2686e9b330cfb.jpg" //tslint:disable-line
-          } style={{ paddingTop: "-67%" }} /> 
-          <a href = 'https://chrome.google.com/webstore/detail/'><button>Install</button></a>
+            ? startingGif //tslint:disable-line
+            : startingGif //tslint:disable-line
+          } style={{ paddingTop: "-67%", width: '67%', marginBottom: "50"}} /> 
+          <a href = 'https://chrome.google.com/webstore/detail/'><button style={{ padding: "15" }}>Install</button></a>
           <Link to='content' smooth={true} offset={30} duration={900}>
             <div id='arrow-down'>
               <i className='fas fa-angle-double-down' />
@@ -64,9 +51,9 @@ const MyApp: React.FC = () => {
           <About />
         </div>
 
-          <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
+          {/* <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
             {t("Date", { date: new Date() })}
-          </Typography>
+          </Typography> */}
         </Grid>
 
 

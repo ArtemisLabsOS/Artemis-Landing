@@ -85,13 +85,42 @@ h2{
 }
 
 
+
+@keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
+#arrow-down {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  animation: jump 5s infinite;
+}
+#header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 5em;
+  background-color: #212121;
+  justify-content: space-around;
+  text-align: right;
+  margin-right: 75px;
+  margin-top: 0;
+  width: 100%;
+}
+
+#header a{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .3em;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
 button{
   font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
+  font-size: 30px;
   text-transform: uppercase;
   letter-spacing: .2em;
   width: 250px;
-  height: 35px;
+  height: 100%;
   background-color: rgb(31, 198, 142);
   color: rgb(255, 255, 255);
   border: none;
@@ -106,27 +135,7 @@ button:focus{
 button:hover{
   text-shadow: rgb(255, 255, 255);
   background-color: rgb(66, 165, 114);
-  color: rgb(130, 30, 164);
-}
-@keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
-#arrow-down {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  animation: jump 5s infinite;
-}
-.Header{
-  text-align: right;
-  margin-right: 75px;
-  margin-top: 40px;
-  width: 100%;
-}
-.Header a{
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: .3em;
-  color: rgb(45, 103, 66);
-  text-transform: uppercase;
-  transition: all 1s ease;
+  color: ghostwhite;
 }
 
 ::-webkit-scrollbar {
