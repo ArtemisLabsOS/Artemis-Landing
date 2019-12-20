@@ -26,21 +26,7 @@ const MyApp: React.FC = () => {
     <MuiThemeProvider theme={theme}>
       <div>
         <CssBaseline />
-        <AppBar position="sticky" color="default" elevation={0}>
-        <Header>  </Header>
-        
-        <Toolbar>
-       
-          <Grid container alignContent="center" alignItems="center" justify="space-between">
-            <Typography variant="h6">{t("Project Artemis:  Client Dev Tool")}</Typography>
-            <Typography variant="caption"></Typography>
-            <Grid item>
-              <LanguageMenu />
-            </Grid>
-          </Grid>
-         
-        </Toolbar>
-      </AppBar>
+        <Header/>
        
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
     

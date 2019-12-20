@@ -24,21 +24,15 @@ import "../Styles/styles.css"
 const Header: React.FC = () => {  
   const darkMode = useDarkMode();
   const theme = darkMode.value ? darkTheme : darkTheme;
-
-//<a href={../components/projectArtemis.tsx}></a>
   return (
     <MuiThemeProvider theme={theme}>
         <span id="header">
-                
-                  <Tab label="Home"/>  
-                  <Tab  label="Download" />
-                  <Tab  label="Demo" />
-                  <a href="https://github.com/ArtemisLabsLLP/Artemis-dev-tool"><Tab label="Contribute" /></a>
-                  <a href="https://www.patreon.com/artemislabs"> <Tab label="Donate" /> </a>
-                  <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media"/> </a>
-                 
+          <a><Tab label="Download" /></a> 
+          <a href="https://github.com/ArtemisLabsLLP/Artemis-dev-tool"><Tab label="Contribute" /></a>
+          <a href="https://www.patreon.com/artemislabs"> <Tab label="Donate" /> </a>
+          <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media"/> </a>      
        </span>
-      </MuiThemeProvider>
+    </MuiThemeProvider>
   );
 };
 
