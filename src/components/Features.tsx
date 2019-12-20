@@ -27,14 +27,14 @@ const Features: React.FC=()=>{
             </li>
           </div>
           <div className='bullets'>
-            <img src="" width='32' height='32'/>
+            <img src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/schema-visualizer.gif" width='32' height='32'/>
             <li>
               Artemis is currently geared towards Apollo client apps based on React and Node Express  without the need for a server or resolvers. In future releases, we
               plan to provide support for other GraphQL  implementations.
             </li>
           </div>
         </div>
-        <img className='demo' src="" />
+        <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/observer.gif" />
       </div>
 
       <h3>React Tab</h3>
@@ -46,7 +46,8 @@ const Features: React.FC=()=>{
           <div className='bullets'>
             <i className="fas fa-sitemap fa-2x" style={{width: '32px'}}></i>
             <li>
-              
+            <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/cache22.gif" />
+
             </li>
           </div>
           <div className='bullets'>
@@ -58,11 +59,11 @@ const Features: React.FC=()=>{
           <div className='bullets'>
             <i className="fas fa-filter fa-2x"></i>
             <li>
-           
+            <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/snapshot-.gif" />
             </li>
           </div>
         </div>
-        <img className='demo' src="" />
+        <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/tree1turq.gif" />
       </div>
     </div>
   );
