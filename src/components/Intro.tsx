@@ -15,17 +15,15 @@ const Intro: React.FC = () => {
       Debug and test query mutations and calls using introspection
       The web based extension is best used for React and Express products/applications in development mode, and is available at the chrome store. 
         
-
-
       Core features:
-    <ol>
+    <ul>
            <li>1. Display schema, query, and GraphQL response with endpoint detection </li> 
            <li> 2. Query caching and component storage- View normalized Apollo Client cache in JSON Format</li>
            <li>3. History of past queries per testing session </li> 
           <li>4. Query response Snapshot featured</li>
           <li>5. View Response and Query Visualizer tree in inspection window</li>
            <li> 6. Performance monitoring and Management </li>
-   </ol>
+   </ul>
        </p>
       <p>See your GraphQL schema, queries, and cache in real-time</p>
       <p> Includes query snapshot </p>
@@ -38,8 +36,7 @@ const Intro: React.FC = () => {
       <h3>Like our developer tool? Give us a star!</h3>
 
       <div id='github-btns'>
-        {/* allows a user to follow our repo by watching the repo */}
-        <a
+          <a
           id='github-watch'
           className='github-button'
           href='https://github.com/ArtemisLabsLLP/Artemis-dev-tool'
@@ -51,7 +48,6 @@ const Intro: React.FC = () => {
           Watch
         </a>
         <div className='space' />
-        {/* A button created for a vistor to star our repo */}
         <a
           className='github-button'
           href='https://github.com/ArtemisLabsLLP/Artemis-dev-tool'
@@ -63,7 +59,6 @@ const Intro: React.FC = () => {
           Star
         </a>
       </div>
-
 
     </div>
   );

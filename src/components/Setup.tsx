@@ -13,7 +13,7 @@ const Setup: React.FC = () => {
             <th> <i className="fas fa-download"></i> Build your own extension</th>
           </tr>
           <tr className='table-headings'>
-            <td>1. Install <b><a href='https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en' target='_blank'>React Developer Tools</a></b>.</td>
+            <td>1. Install <b><a href='https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en' target='_blank'>GraphQL Apollo Developer Tools</a></b>.</td>
             <td>1. Clone the repo and npm install</td>
           </tr>
         </thead>

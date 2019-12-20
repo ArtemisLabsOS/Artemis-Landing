@@ -11,6 +11,22 @@ body {
   max-width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: white; 
+}
+#splash{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 .fa-angle-double-down{
   margin-top: 15px;
   font-size: 30px;
@@ -56,7 +72,12 @@ h2{
     height: 600px;
   }
   h1, h2, h3{
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: .3em;
+    color: rgb(188, 193, 109);
+    text-transform: uppercase;
+    padding: 20px; 
+    
   }
   .content{
     padding: 0px 100px 25px; 
@@ -64,6 +85,29 @@ h2{
 }
 
 
+button{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  width: 250px;
+  height: 35px;
+  background-color: rgb(31, 198, 142);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px 2px 8px;
+  cursor: pointer;
+  transition: all 1s ease;
+  margin: 10px;
+}
+button:focus{
+  outline: none;
+}
+button:hover{
+  text-shadow: rgb(255, 255, 255);
+  background-color: rgb(66, 165, 114);
+  color: rgb(130, 30, 164);
+}
 @keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
 #arrow-down {
   position: relative;
@@ -71,7 +115,19 @@ h2{
   text-align: center;
   animation: jump 5s infinite;
 }
-
+.Header{
+  text-align: right;
+  margin-right: 75px;
+  margin-top: 40px;
+  width: 100%;
+}
+.Header a{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .3em;
+  color: rgb(45, 103, 66);
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -87,6 +143,9 @@ h2{
   border-radius: 5px;
 }
 
+.fa-angle-double-down:hover {
+  color: rgb(35, 198, 195);
+}
 .Resizer {
   z-index: 1;
 }
