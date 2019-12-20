@@ -5,7 +5,7 @@ const Intro: React.FC = () => {
   return (
     <div>
       <div>
-      <img src="" height='100px' />
+      {/* <img src="" height='100px' /> */}
       <h1></h1>
       <p id='artemis-bio'>
       Project Artemis is an Open Sourced client developer tool for single endpoint testing of GraphQL queries with Apollo Client. 
