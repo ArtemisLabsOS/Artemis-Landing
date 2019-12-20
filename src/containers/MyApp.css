@@ -37,7 +37,7 @@ a{
 h1, h2, h3{
   font-family: 'Quicksand', sans-serif;
   letter-spacing: .3em;
-  color: rgb(243, 255, 131);
+  color: #529685;
   text-transform: uppercase;
   padding: 20px; 
 }
@@ -74,7 +74,7 @@ h2{
   h1, h2, h3{
     font-family: 'Quicksand', sans-serif;
     letter-spacing: .3em;
-    color: rgb(188, 193, 109);
+    color: #529685;
     text-transform: uppercase;
     padding: 20px; 
     
