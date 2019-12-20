@@ -36,7 +36,7 @@ const MyApp: React.FC = () => {
     <img className="logo"  alt="logo" src={darkMode.value
             ? startingGif //tslint:disable-line
             : startingGif //tslint:disable-line
-          } style={{ paddingTop: "-67%", width: '67%', marginBottom: "50"}} /> 
+          } style={{ paddingTop: "-67%", width: '67%', marginTop: "50", height: "100%" }} /> 
           <a href = 'https://chrome.google.com/webstore/detail/'><button style={{ padding: "15" }}>Install</button></a>
           <Link to='content' smooth={true} offset={30} duration={900}>
             <div id='arrow-down'>
@@ -44,10 +44,13 @@ const MyApp: React.FC = () => {
             </div>
           </Link>
         </div>
+        <br/>
+        <br/>
+        <br/>
         <div className='content'>
           <Setup />
-          <Features />
-          <Intro />
+          {/* <Features /> */}
+          {/* <Intro /> */}
           <About />
         </div>
 
