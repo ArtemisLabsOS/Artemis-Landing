@@ -35,18 +35,20 @@ const Features: React.FC=()=>{
           </div>
         </div>
         <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/observer.gif" />
+        <p></p>
+        <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/cache22.gif" />
+
       </div>
 
-      <h3>React Tab</h3>
+      <h3> Artemis Tab</h3>
       <h4>
-      Artemis parses through React applications to generate a real-time interactive visualizer graph representing the app's React component hierarchy, with node-specific state and props data.
+      Artemis parses through React Express applications to generate a real-time interactive visualizer graph representing the app's React component hierarchy, with node-specific state and props data.
       </h4>
       <div className='artemis-features'>
         <div>
           <div className='bullets'>
             <i className="fas fa-sitemap fa-2x" style={{width: '32px'}}></i>
             <li>
-            <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/cache22.gif" />
 
             </li>
           </div>
@@ -59,10 +61,11 @@ const Features: React.FC=()=>{
           <div className='bullets'>
             <i className="fas fa-filter fa-2x"></i>
             <li>
-            <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/snapshot-.gif" />
             </li>
           </div>
         </div>
+        <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/snapshot-.gif" />
+        <p></p>
         <img className='demo' src="https://github.com/ArtemisLabsLLP/Artemis-dev-tool/raw/master/gifs/tree1turq.gif" />
       </div>
     </div>

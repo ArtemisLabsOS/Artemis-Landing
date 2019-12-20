@@ -17,7 +17,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 
 import "../Styles/styles.css"
-
+// <div id="searchBar">
+//{/* <SearchBar
+          
+///></div>   */}
 const Header: React.FC = () => {  
   const darkMode = useDarkMode();
   const theme = darkMode.value ? darkTheme : darkTheme;
@@ -25,17 +28,12 @@ const Header: React.FC = () => {
 //<a href={../components/projectArtemis.tsx}></a>
   return (
     <MuiThemeProvider theme={theme}>
-
-      <div id="searchBar">
-        <SearchBar
-          
-        /></div>  
         <span id="header">
                 
                   <Tab label="Home"/>  
                   <Tab  label="Download" />
                   <Tab  label="Demo" />
-                  <Tab label="Contribute" />
+                  <a href="https://github.com/ArtemisLabsLLP/Artemis-dev-tool"><Tab label="Contribute" /></a>
                   <a href="https://www.patreon.com/artemislabs"> <Tab label="Donate" /> </a>
                   <a href="https://medium.com/artemis-labs-open-source"> <Tab label="Media"/> </a>
                  
